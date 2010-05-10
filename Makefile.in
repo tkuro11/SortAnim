@@ -1,0 +1,25 @@
+LDFLAGS+= -lX11
+#CXXFLAGS=-O -I@x_includes@
+
+PROG= null bubble shell heap select insert merge qsort
+all: $(PROG)
+
+%: %.o
+	$(CXX) $^ -o $@ $(LDFLAGS)
+
+distclean: clean
+	rm -f Makefile config.*
+clean:
+	rm -f *~ *.o $(PROG)
+
+null:   null.o   Sort.o makedat.o	# It's a joke.
+bubble: bubble.o Sort.o makedat.o
+shell:  shell.o  Sort.o makedat.o
+heap:   heap.o   Sort.o makedat.o
+select: select.o Sort.o makedat.o
+insert: insert.o Sort.o makedat.o
+merge:  merge.o Sort.o makedat.o
+qsort:	qsort.o Sort.o makedat.o
+oesort: oesort.o Sort.o makedat.o
+
+
