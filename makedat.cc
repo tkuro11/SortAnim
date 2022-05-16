@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "Sort.h"
 
-int makedat(Elements& e, int initial, int maxvalue)
+void makedat(Elements& e, int initial, int maxvalue)
 {
 	int arraysize = e;
 

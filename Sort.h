@@ -40,8 +40,8 @@ public:
 
 #define swap(A, B) {int t = A; A=B;B=t; swapcount++;}
 
-int proc(Elements&, int);
-int makedat(Elements&, int, int);	/* Elements,  flag,   maxvalue */
+void proc(Elements&, int);
+void makedat(Elements&, int, int);	/* Elements,  flag,   maxvalue */
 
 #define sort proc
 

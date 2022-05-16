@@ -87,7 +87,7 @@ Node& Elements::operator [] (int ind)
 	return array[ind];
 }
 
-
+int
 main(int argc, char *argv[])
 {
 	int ch;
