@@ -6,7 +6,7 @@ int *work;
 
 void mergesort(Elements&, int, int);
 
-int sort(Elements& A, int execflag)
+void sort(Elements& A, int execflag)
 {
 	work = new int[A/2+1];
 	mergesort(A, 0, A-1);

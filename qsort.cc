@@ -4,7 +4,7 @@
 
 int q_sort(Elements&, int, int);
 
-int sort(Elements& A, int flag)
+void sort(Elements& A, int flag)
 {
 	q_sort(A, 0, A-1);
 }

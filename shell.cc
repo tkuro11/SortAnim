@@ -2,7 +2,7 @@
 
 #include "Sort.h"
 
-int sort(Elements& A, int flag)
+void sort(Elements& A, int flag)
 {
 	int h=1, i, j, x;
 
