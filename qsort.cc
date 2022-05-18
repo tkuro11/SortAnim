@@ -2,17 +2,17 @@
 
 #include "Sort.h"
 
-int q_sort(Elements&, int, int);
+void q_sort(Elements&, int, int);
 
 void sort(Elements& A, int flag)
 {
 	q_sort(A, 0, A-1);
 }
 
-int q_sort(Elements& A, int first, int last)
+void q_sort(Elements& A, int first, int last)
 {
 	int i,j,basis;
-	if (last-first <= 0) return 0;
+	if (last-first <= 0) return;
 	basis = A[first];
 	i= first; j = last;
 	do {
